@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> change colors on click</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <style>
+    .container{
+      height:100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+  </style>
+</head>
+
+<body onmouseup="changeColors()">
+  <div class="container">
+    </div>
+    
+    <script>
+    var index = 0;
+    
+    function changeColors(){
+      var colors=["#cc99ff",,"green"," #cc9900","#990099",
+      'violet',
+      "seegreen","pink","blue","orange"," #800000","	 #bfff00","#996600","#660066","#66ccff",]
+      document.getElementsByTagName("body")[0].style.background=colors[index++];
+     
+     if (index > colors.length-1)
+     index = 0;
+    
+      
+    }
+    
+  </script>
+
+</body>
+
+</html>
